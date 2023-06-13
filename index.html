@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="about"></div>
+            <div class="navbar"></div>
+            <h2 class="logo">WebDesign</h2>
+        </div>
+        <div class="des">
+            <ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">SERVICE</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <div class="button">
+                <div id="btnn"></div>
+                    <button type="btn" class="toggle-btn" onclick="login()">login</button>
+                    <button type="btn" class="toggle-btn" onclick="signup()">signup</button>
+            </div>
+                <form id="login" class="input">
+                    <input  type="text"class="input-filed" name="" placeholder="enter text">
+                    <input  type="password" class="input-filed" name="" placeholder="enter text">
+                    <input  type="checkbox" class="check-box"><span>remember password</span>
+                    <button type="submit" class="submit-btn">login</button>
+                </form>
+                <form id="signup" class="input">
+                    <input  type="text"class="input-filed" name="" placeholder="enter text">
+                    <input  type="email" class="input-filed" name="" placeholder="email">
+                    <input type="text" class="input-field" placeholder="enter password">
+                    <input  type="checkbox" class="check-box"><span>i agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn">signup</button>
+                </form>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("signup");
+            var z = document.getElementById("btnn");
+        
+            function signup(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+            function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0";
+            }
+        </script>
+    </header>
+</body>
+</html>
